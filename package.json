@@ -1,0 +1,39 @@
+{
+  "name": "com.catsplatstudios.adsmediation",
+  "version": "0.5.0",
+  "displayName": "Ads Mediation Shim",
+  "description": "A thin layer over Unity LevelPlay. Game code depends on one small interface for banner, interstitial and rewarded ads, while LevelPlay does the mediation. Ads load themselves, and a fake implementation makes game logic easy to test.",
+  "unity": "6000.0",
+  "keywords": [
+    "ads",
+    "mediation",
+    "levelplay",
+    "banner",
+    "interstitial",
+    "rewarded",
+    "shim"
+  ],
+  "author": {
+    "name": "Hisham Ata",
+    "email": "hisham.ata@catsplatstudios.com",
+    "url": "https://github.com/hisham-CSS"
+  },
+  "dependencies": {
+    "com.unity.services.levelplay": "9.5.1"
+  },
+  "samples": [
+    {
+      "displayName": "Ads Demo",
+      "description": "A scene with buttons for every ad format and banner position, a composition root, and game logic tested with a fake ad service.",
+      "path": "Samples~/AdsDemo"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hisham-CSS/unity-adsmediationshim.git"
+  },
+  "license": "MIT",
+  "changelogUrl": "https://github.com/hisham-CSS/unity-adsmediationshim/blob/main/CHANGELOG.md",
+  "documentationUrl": "https://github.com/hisham-CSS/unity-adsmediationshim/blob/main/Documentation~/ads-mediation-shim.md",
+  "licensesUrl": "https://github.com/hisham-CSS/unity-adsmediationshim/blob/main/LICENSE.md"
+}

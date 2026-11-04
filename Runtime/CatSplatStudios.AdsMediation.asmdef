@@ -1,0 +1,16 @@
+{
+    "name": "CatSplatStudios.AdsMediation",
+    "rootNamespace": "AdsMediation",
+    "references": [
+        "Unity.LevelPlay"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
