@@ -205,7 +205,7 @@ Here, each one is a few lines in `LevelPlayAdService`, and callers never hear ab
 **Keep it thin.** A shim translates. The moment it starts making its own decisions, it's a product you have to
 maintain. This package learned that the hard way: its first version re-implemented mediation itself, with its own
 waterfall, network adapters and simulated networks, in over 1,400 lines. LevelPlay already does all of that. Cutting it
-down to a thin layer removed about three-quarters of the code and lost nothing a game needed.
+down to a thin layer removed most of the code and lost nothing a game needed.
 
 **Don't wrap everything.** Shims earn their keep around things that are likely to change and that you don't control:
 ads, analytics, in-app purchases, platform services. Don't wrap Unity's `Vector3` or `List<T>`. A layer you'll never

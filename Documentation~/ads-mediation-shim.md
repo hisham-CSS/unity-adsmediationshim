@@ -131,6 +131,18 @@ open **Window > General > Test Runner > PlayMode**:
   This comes from inside LevelPlay and doesn't affect the ads.
 - **Consent isn't handled for you.** See [Before you ship](#before-you-ship).
 
+## Troubleshooting
+
+**The buttons stay on "loading" in the Editor.** Check that the build target is Android or iOS, and read the
+Console for lines starting with `[Ads]`. A missing app key is reported there.
+
+**An Android build fails at the Gradle step with `package com.unity3d.mediation does not exist`.** The
+native SDK isn't in the build. If you haven't done [step 4 of Setup](#setup), do that. If the build used
+to work, Mobile Dependency Resolver has probably cleared its lines from
+`Assets/Plugins/Android/mainTemplate.gradle`, which can happen if the Editor opens while scripts don't
+compile. Fix any compile errors, then run **Assets > Mobile Dependency Resolver > Android Resolver > Force
+Resolve**.
+
 ## Reference
 
 ### `IAdService`
